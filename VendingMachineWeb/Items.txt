@@ -1,0 +1,6 @@
+Soup::0.50::10
+Water::1::5
+Potato::0.75::-3
+Sprite::1::5
+Candy::0.25::7
+Fish::1::10
