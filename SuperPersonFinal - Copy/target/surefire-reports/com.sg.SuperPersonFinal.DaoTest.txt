@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.sg.SuperPersonFinal.DaoTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 2.828 s <<< FAILURE! - in com.sg.SuperPersonFinal.DaoTest
+addUpdateLocation(com.sg.SuperPersonFinal.DaoTest)  Time elapsed: 0.075 s  <<< ERROR!
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [update Location set LocationName = ?, Description = ?, State = ?, City = ?, Street = ?, Zip = ?, Latitude = ?, Longitude = ? where LocationId = ?]; nested exception is java.sql.SQLException: No value specified for parameter 9
+	at com.sg.SuperPersonFinal.DaoTest.addUpdateLocation(DaoTest.java:441)
+Caused by: java.sql.SQLException: No value specified for parameter 9
+	at com.sg.SuperPersonFinal.DaoTest.addUpdateLocation(DaoTest.java:441)
+
+addGetDeleteOrganization(com.sg.SuperPersonFinal.DaoTest)  Time elapsed: 0.015 s  <<< ERROR!
+org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [select * from Organization where OrganizationId = ?]; SQL state [S0022]; error code [0]; Column 'LocationName' not found.; nested exception is java.sql.SQLException: Column 'LocationName' not found.
+	at com.sg.SuperPersonFinal.DaoTest.addGetDeleteOrganization(DaoTest.java:313)
+Caused by: java.sql.SQLException: Column 'LocationName' not found.
+	at com.sg.SuperPersonFinal.DaoTest.addGetDeleteOrganization(DaoTest.java:313)
+
